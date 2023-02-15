@@ -14,6 +14,11 @@ function App() {
   {
     setShowParagraph((prevShowParagraph) => !prevShowParagraph)
   }, [])
+
+  const alowToggleHandler = () => 
+  {
+    setAllowToggle((prevToggleValue) => !prevToggleValue)
+  }
   
   return (
     <div className="app">
