@@ -5,12 +5,17 @@ import Button from './components/UI/Button/Button';
 
 function App() {
   const [showParagraph, setShowParagraph] = useState(false)
+
+  const toggleParagraph = () => 
+  {
+    showParagraph = !showParagraph
+  }
   
   return (
     <div className="app">
       <h1>Hi there!</h1>
       {showParagraph && <p>This is new</p>}
-      <Button>Show Paragraph</Button>
+      <Button onClick={toggleParagraph}>Show Paragraph</Button>
     </div>
   );
 }
