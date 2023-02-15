@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { memo } from 'react'
 
 const DemoOutput = (props) => {
     console.log("Demo Output")
@@ -8,4 +8,4 @@ const DemoOutput = (props) => {
     )
 }
 
-export default DemoOutput
+export default memo(DemoOutput)
