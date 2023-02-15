@@ -8,7 +8,7 @@ function App() {
 
   const toggleParagraph = () => 
   {
-    setShowParagraph(!showParagraph)
+    setShowParagraph((prevShowParagraph) => !prevShowParagraph)
   }
   
   return (
