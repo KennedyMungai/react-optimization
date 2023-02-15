@@ -15,7 +15,7 @@ function App() {
     setShowParagraph((prevShowParagraph) => !prevShowParagraph)
   }, [])
 
-  const alowToggleHandler = () => 
+  const allowToggleHandler = () => 
   {
     setAllowToggle((prevToggleValue) => !prevToggleValue)
   }
@@ -24,7 +24,7 @@ function App() {
     <div className="app">
       <h1>Hi there!</h1>
       <DemoOutput show={showParagraph} />
-      <Button onClick={toggleParagraph}>Allow toggling</Button>
+      <Button onClick={allowToggleHandler}>Allow toggling</Button>
       <Button onClick={toggleParagraph}>Show Paragraph</Button>
     </div>
   );
