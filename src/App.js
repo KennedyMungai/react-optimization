@@ -9,10 +9,10 @@ function App() {
 
   console.log("App running")
 
-  const toggleParagraph = () => 
+  const toggleParagraph = useCallback(() => 
   {
     setShowParagraph((prevShowParagraph) => !prevShowParagraph)
-  }
+  })
   
   return (
     <div className="app">
