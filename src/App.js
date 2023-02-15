@@ -16,7 +16,6 @@ function App() {
   return (
     <div className="app">
       <h1>Hi there!</h1>
-      {showParagraph && <p>This is new</p>}
       <Button onClick={toggleParagraph}>Show Paragraph</Button>
     </div>
   );
