@@ -6,6 +6,7 @@ import Button from './components/UI/Button/Button';
 
 function App() {
   const [showParagraph, setShowParagraph] = useState(false)
+  const [allowToggle, setAllowToggle] = useState(false)
 
   console.log("App running")
 
